@@ -6,11 +6,14 @@ class BottomNavScaffold extends StatelessWidget {
   final Widget child;
   final GoRouterState state;
 
-  const BottomNavScaffold({required this.child, required this.state});
+  const BottomNavScaffold(
+      {super.key, required this.child, required this.state});
 
   @override
   Widget build(BuildContext context) {
-    var l10n = AppLocalizations.of(context)!;
+    final l10n = AppLocalizations.of(context)!;
+    final backgroundColor =
+        Theme.of(context).bottomNavigationBarTheme.backgroundColor;
     return Scaffold(
       body: child,
       bottomNavigationBar: _bottom()
@@ -24,15 +27,21 @@ class BottomNavScaffold extends StatelessWidget {
                           : 3,
               items: [
                 BottomNavigationBarItem(
-                    icon: const Icon(Icons.home), label: l10n.homeLabel),
+                    icon: const Icon(Icons.home),
+                    label: l10n.homeLabel,
+                    backgroundColor: backgroundColor),
                 BottomNavigationBarItem(
-                    icon: const Icon(Icons.chat), label: l10n.chatsLabel),
+                    icon: const Icon(Icons.chat),
+                    label: l10n.chatsLabel,
+                    backgroundColor: backgroundColor),
                 BottomNavigationBarItem(
                     icon: const Icon(Icons.favorite),
-                    label: l10n.favoritesLabel),
+                    label: l10n.favoritesLabel,
+                    backgroundColor: backgroundColor),
                 BottomNavigationBarItem(
                     icon: const Icon(Icons.settings),
-                    label: l10n.settingsLabel),
+                    label: l10n.settingsLabel,
+                    backgroundColor: backgroundColor),
               ],
               onTap: (index) {
                 switch (index) {
