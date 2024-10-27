@@ -41,4 +41,7 @@ final appTheme = ThemeData(
         brightness: Brightness.dark,
        */
   ),
+  textTheme: const TextTheme(
+    headlineLarge: TextStyle(fontSize: 24.0, fontFamily: 'sans-serif'),
+  ),
 );
