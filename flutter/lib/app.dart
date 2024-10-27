@@ -20,6 +20,17 @@ class MyApp extends StatelessWidget {
           Locale('ru', 'RU'),
         ],
         routerConfig: routerConfig,
+      localizationsDelegates: const [
+        AppLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+      ],
+      routerConfig: routerConfig,
+      supportedLocales: const [
+        Locale('en', 'US'),
+        Locale('ru', 'RU'),
+      ],
+      title: 'Demo app',
     );
   }
 }
