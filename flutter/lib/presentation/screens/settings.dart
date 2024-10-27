@@ -6,13 +6,10 @@ class SettingsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Settings Screen')),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () => context.go('/favorites'),
-          child: const Text('Go to the Favorites screen'),
-        ),
+    return Center(
+      child: ElevatedButton(
+        onPressed: () => context.go('/favorites'),
+        child: const Text('Go to the Favorites screen'),
       ),
     );
   }

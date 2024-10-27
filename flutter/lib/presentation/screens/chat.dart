@@ -8,14 +8,11 @@ class ChatScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Chat Screen $id')),
-      body: Center(
+    return Center(
         child: ElevatedButton(
           onPressed: () => GoRouter.of(context).pop(),
           child: const Text('Go back'),
         ),
-      ),
-    );
+      );
   }
 }
