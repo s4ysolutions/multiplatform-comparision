@@ -10,6 +10,8 @@ import '../../screens/settings.dart';
 
 final RouteBase rootRoute = ShellRoute(
     builder: (context, state, child) {
+      // i prefer to pass down the state to the bottom nav bar
+      // over the getting it from the context each time
       return BottomNavScaffold(child: child, state: state);
     },
     routes: <RouteBase>[
