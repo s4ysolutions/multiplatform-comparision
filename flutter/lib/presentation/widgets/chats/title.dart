@@ -7,7 +7,7 @@ class ChatsTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    return Text(l10n.chatsTitle,
-        style: Theme.of(context).textTheme.headlineLarge);
+    return Text(l10n.chatsTitle.toUpperCase(),
+        style: Theme.of(context).textTheme.titleLarge);
   }
 }

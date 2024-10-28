@@ -1,7 +1,15 @@
 {
+  "buyLabel": "Buy",
   "chatsLabel": "Chats",
   "chatsTitle": "Chats",
   "favoritesLabel": "Favorites",
   "homeLabel": "Home",
-  "settingsLabel": "Settings"
+  "incognito_mode_24": "Incognito mode for 24 hours",
+  "incognito_mode_24_1": "",
+  "incognito_mode_24_2": "Incognito",
+  "incognito_mode_24_3": " mode for 24 hours",
+  "incognito_mode_24_description": "Become invisible in the feed and chats, hide the ad and enjoy <Space> unnoticed communication",
+  "off": "Off",
+  "settingsLabel": "Settings",
+  "termsConditionsLabel": "Terms and conditions"
 }

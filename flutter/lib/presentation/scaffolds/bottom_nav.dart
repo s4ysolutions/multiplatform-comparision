@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:puretest/presentation/state/providers/app.dart';
+import 'package:puretest/presentation/widgets/app_wrapper.dart';
 import 'package:puretest/presentation/widgets/bottom_nav.dart';
 
 class BottomNavScaffold extends StatelessWidget {
   final Widget child;
   final GoRouterState state;
 
-  const BottomNavScaffold({super.key, required this.child, required this.state});
+  const BottomNavScaffold(
+      {super.key, required this.child, required this.state});
 
   @override
   Widget build(BuildContext context) {
@@ -15,9 +18,14 @@ class BottomNavScaffold extends StatelessWidget {
         currentPath == '/chats' ||
         currentPath == '/favorites' ||
         currentPath == '/settings';
-    return Scaffold(
-      body: child,
-      bottomNavigationBar: bottom ? MainBottomNavBar(state: state) : null,
-    );
+    return AppProvider(
+        builder: (context, _) => AppWrapper(
+                child: Scaffold(
+              backgroundColor:
+                  Theme.of(context).colorScheme.surfaceContainerLowest,
+              body: child,
+              bottomNavigationBar:
+                  bottom ? MainBottomNavBar(state: state) : null,
+            )));
   }
 }

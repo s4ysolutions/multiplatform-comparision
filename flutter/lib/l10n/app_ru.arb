@@ -1,7 +1,15 @@
 {
+  "buyLabel": "Купить",
   "chatsLabel": "Чаты",
   "chatsTitle": "Чаты",
   "favoritesLabel": "Избранное",
   "homeLabel": "Главная",
-  "settingsLabel": "Настройки"
+  "incognito_mode_24": "Режим инкогнито на 24 часа",
+  "incognito_mode_24_1": "Режим ",
+  "incognito_mode_24_2": "инкогнито",
+  "incognito_mode_24_3": " на 24 часа",
+  "incognito_mode_24_description": "Стань невидимкой в ленте и чатах, скрой объявление и наслаждайся <Space> незамеченным общением",
+  "off": "Off",
+  "settingsLabel": "Настройки",
+  "termsConditionsLabel": "Условия и положения"
 }
