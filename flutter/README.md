@@ -1,6 +1,6 @@
 # DEMO Flutter App for social network
 
-This is a demo application built with Flutter to showcase essential UI use case, UI state management and BLoC based
+This is the publicly available extraction of a social network application built with Flutter to showcase essential UI use case, UI state management and BLoC based
 communication with business logic levels.
 
 ## Live demo
