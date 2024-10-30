@@ -15,7 +15,7 @@ class MainBottomNavBar extends StatelessWidget {
   final GoRouterState state;
 
 
-  MainBottomNavBar({super.key, required this.state});
+  const MainBottomNavBar({super.key, required this.state});
 
   @override
   Widget build(BuildContext context) {

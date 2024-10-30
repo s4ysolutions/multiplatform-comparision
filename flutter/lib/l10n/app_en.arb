@@ -1,4 +1,5 @@
 {
+  "beginConversation": "Begin conversation",
   "buyLabel": "Buy",
   "chatsLabel": "Chats",
   "chatsTitle": "Chats",
@@ -9,7 +10,21 @@
   "incognito_mode_24_2": "Incognito",
   "incognito_mode_24_3": " mode for 24 hours",
   "incognito_mode_24_description": "Become invisible in the feed and chats, hide the ad and enjoy <Space> unnoticed communication",
+  "likesCount1": "person liked you",
+  "likesCount234": "people liked you",
+  "likesCount50": "people liked you",
   "off": "Off",
+  "messagePrompt": "Message...",
   "settingsLabel": "Settings",
-  "termsConditionsLabel": "Terms and conditions"
+  "termsConditionsLabel": "Terms and conditions",
+  "temptationsInCommon1": "common temptation",
+  "temptationsInCommon24": "common temptations",
+  "temptationsInCommon50": "common temptations",
+  "timeFormat": "{hh}:{mm}",
+  "@timeFormat": {
+    "placeholders": {
+      "hh": {"type": "int"},
+      "mm": {"type": "int"}
+    }
+  }
 }

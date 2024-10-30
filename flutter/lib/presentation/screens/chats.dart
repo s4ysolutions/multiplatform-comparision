@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:puretest/presentation/widgets/chats/title.dart';
-import 'package:puretest/presentation/widgets/chats/panel.dart';
+import 'package:puretest/presentation/widgets/chats/chats_list.dart';
+import 'package:puretest/presentation/widgets/chats/likes_count.dart';
+import 'package:puretest/presentation/widgets/chats/chats_title.dart';
+import 'package:puretest/presentation/widgets/panels/panel.dart';
 
 import '../widgets/chats/incognito_switch.dart';
 
@@ -9,20 +11,32 @@ class ChatsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ChatsPanel(
-        child: Padding(
-            padding: EdgeInsets.all(16),
-            child: Column(
-              children: <Widget>[
-                Row(
-                  children: <Widget>[
-                    Expanded(child: ChatsTitle()),
-                    ChatIncognitoSwitch(),
-                  ],
-                ),
-                Text('Chat 2'),
-                Text('Chat 3'),
-              ],
-            )));
+    return Stack(children: [
+      Positioned(
+          left: 0,
+          right: 0,
+          bottom: 0,
+          child: Container(
+            color: Colors.black, // Set background color to black
+            width: double.infinity, // Fit the width of the parent
+            height: MediaQuery.of(context).size.height *
+                0.65, // Set height to 60% of the screen
+          )),
+      Panel1(
+          child: Column(
+        children: <Widget>[
+          Row(
+            children: <Widget>[
+              const Expanded(child: const ChatsTitle()),
+              const ChatIncognitoSwitch(),
+            ],
+          ),
+          SizedBox(height: 16),
+          const LikesCount(),
+          SizedBox(height: 16),
+          Expanded(child: const ChatsList()),
+        ],
+      ))
+    ]);
   }
 }

@@ -10,10 +10,13 @@ environment:
   sdk: ^3.5.3
 
 dependencies:
+  bloc: ^8.1.4
+  equatable: ^2.0.5
   flutter:
     sdk: flutter
 
 
+  flutter_bloc: ^8.1.6
   flutter_localizations:
     sdk: flutter
   flutter_svg: ^2.0.10+1
@@ -38,4 +41,40 @@ flutter:
     - assets/images/buy/bulb.svg
     - assets/images/buy/incognito.svg
     - assets/images/buy/incognito_mode.svg
+    - assets/images/chats/alien.svg
+    - assets/images/chats/heart.svg
     - assets/images/chats/incognito_switch_off.svg
+    - assets/images/chats/mic.svg
+    - assets/images/chats/mic_off.svg
+    - assets/images/chats/plus.svg
+    - assets/images/chats/rocket.png
+    - assets/images/chats/users/1.png
+    - assets/images/chats/users/2.png
+    - assets/images/chats/users/3.png
+    - assets/images/chats/users/4.png
+    - assets/images/chats/users/5.png
+    - assets/images/chats/users/6.png
+
+fonts:
+  - family: Ubuntu
+    fonts:
+      - asset: assets/fonts/Ubuntu-Bold.ttf
+        weight: 700
+      - asset: assets/fonts/Ubuntu-BoldItalic.ttf
+        style: italic
+        weight: 700
+      - asset: assets/fonts/Ubuntu-Italic.ttf
+        style: italic
+        weight: 400
+      - asset: assets/fonts/Ubuntu-Light.ttf
+        weight: 300
+      - asset: assets/fonts/Ubuntu-LightItalic.ttf
+        style: italic
+        weight: 300
+      - asset: assets/fonts/Ubuntu-Medium.ttf
+        weight: 500
+      - asset: assets/fonts/Ubuntu-MediumItalic.ttf
+        style: italic
+        weight: 500
+      - asset: assets/fonts/Ubuntu-Regular.ttf
+        weight: 400

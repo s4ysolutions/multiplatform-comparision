@@ -1,4 +1,5 @@
 {
+  "beginConversation": "Начни общение",
   "buyLabel": "Купить",
   "chatsLabel": "Чаты",
   "chatsTitle": "Чаты",
@@ -9,7 +10,21 @@
   "incognito_mode_24_2": "инкогнито",
   "incognito_mode_24_3": " на 24 часа",
   "incognito_mode_24_description": "Стань невидимкой в ленте и чатах, скрой объявление и наслаждайся <Space> незамеченным общением",
+  "likesCount1": "человек тебя лайкнул",
+  "likesCount234": "человека тебя лайкнули",
+  "likesCount50": "человек тебя лайкнули",
+  "messagePrompt": "Сообщение...",
   "off": "Off",
   "settingsLabel": "Настройки",
-  "termsConditionsLabel": "Условия и положения"
+  "temptationsInCommon1": "общий соблазн",
+  "temptationsInCommon24": "общих соблазна",
+  "temptationsInCommon50": "общих соблазнов",
+  "termsConditionsLabel": "Условия и положения",
+  "timeFormat": "{hh} ч {mm} мин",
+  "@timeFormat": {
+    "placeholders": {
+      "hh": {"type": "int"},
+      "mm": {"type": "int"}
+    }
+  }
 }
