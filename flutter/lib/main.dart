@@ -29,8 +29,8 @@ void main() {
       Provider<ChatService>(
         create: (_) => chatService,
       ),
-      //], child: const UI()),
-    ], child: const UI(locale: Locale("ru", "RU"))),
+      ], child: const UI()),
+    //], child: const UI(locale: Locale("ru", "RU"))),
   );
 
   runApp(app);
