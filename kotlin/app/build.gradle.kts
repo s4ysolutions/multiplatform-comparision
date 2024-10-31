@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "solutions.s4y.puredemo"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "solutions.s4y.puredemo"
