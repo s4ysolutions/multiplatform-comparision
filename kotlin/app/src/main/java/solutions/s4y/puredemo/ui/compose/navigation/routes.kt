@@ -1,12 +1,14 @@
 package solutions.s4y.puredemo.ui.compose.navigation
 
-import android.os.Parcelable
-import kotlinx.parcelize.Parcelize
+import kotlinx.serialization.Serializable
 
-@Parcelize
-sealed class Routes : Parcelable {
+sealed class Routes {
+    @Serializable
     object RoutesHome : Routes()
+    @Serializable
     object RoutesChats : Routes()
+    @Serializable
     object RoutesFavorites : Routes()
+    @Serializable
     object RoutesSettings : Routes()
 }
