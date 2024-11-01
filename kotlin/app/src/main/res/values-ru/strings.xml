@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">puredemo</string>
+    <string name="settings">Настройки</string>
+    <string name="favorites">Любимые</string>
+    <string name="chats">Чат</string>
+    <string name="home">Домой</string>
+</resources>
