@@ -39,6 +39,7 @@ kotlinx-serialization-json-jvm = { module = "org.jetbrains.kotlinx:kotlinx-seria
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+androidx-room = { id = "androidx.room", version.ref = "room" }
 google-devtools-ksp = { id ="com.google.devtools.ksp", version.ref = "ksp"}
 jetbrains-kotlin-serialization = { id ="org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin"}
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
