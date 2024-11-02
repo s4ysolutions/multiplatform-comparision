@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.parcelize)
     alias(libs.plugins.jetbrains.kotlin.serialization)
+    alias(libs.plugins.google.devtools.ksp)
 }
 
 android {
@@ -42,7 +43,9 @@ android {
 }
 
 dependencies {
-
+    ksp(libs.androidx.room.compiler)
+    ksp(libs.dagger.compiler)
+    implementation(libs.google.dagger)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.core.ktx)
