@@ -14,11 +14,11 @@ import solutions.s4y.puredemo.ui.compose.screens.HomeScreen
 import solutions.s4y.puredemo.ui.compose.screens.SettingsScreen
 
 @Composable
-fun MainNavHost(navController: NavHostController, modifier: Modifier = Modifier) {
-    NavHost(navController=navController, startDestination = RoutesHome) {
-        composable<RoutesHome> { HomeScreen() }
-        composable<RoutesChats> { ChatsScreen() }
-        composable<RoutesFavorites> { FavoritesScreen() }
-        composable<Routes.RoutesSettings> { SettingsScreen() }
+fun MainNavHost(navController: NavHostController, modifier: Modifier) {
+    NavHost(navController = navController, startDestination = RoutesHome.path) {
+        composable(RoutesHome.path) { HomeScreen() }
+        composable(RoutesChats.path) { ChatsScreen() }
+        composable(RoutesFavorites.path) { FavoritesScreen() }
+        composable(Routes.RoutesSettings.path) { SettingsScreen() }
     }
 }
