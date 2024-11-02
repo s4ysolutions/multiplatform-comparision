@@ -1,4 +1,4 @@
-package solutions.s4y.puredemo.data.entities
+package solutions.s4y.puredemo.ca.data.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

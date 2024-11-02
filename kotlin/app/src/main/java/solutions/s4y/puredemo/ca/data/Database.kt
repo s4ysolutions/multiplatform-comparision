@@ -1,9 +1,9 @@
-package solutions.s4y.puredemo.data
+package solutions.s4y.puredemo.ca.data
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import solutions.s4y.puredemo.data.dao.ChatInfoDao
-import solutions.s4y.puredemo.data.entities.ChatInfo
+import solutions.s4y.puredemo.ca.data.dao.ChatInfoDao
+import solutions.s4y.puredemo.ca.data.entities.ChatInfo
 
 
 @Database(entities = [ChatInfo::class], version = 1)
