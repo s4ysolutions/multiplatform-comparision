@@ -10,6 +10,7 @@ import solutions.s4y.puredemo.ui.theme.PuredemoTheme
 
 @Composable
 fun HomeScreen() {
+    // val viewModel: HomeViewModel = viewModel(factory = HomeViewModel.Factory(DummyService()))
     Greeting(stringResource(id = R.string.home));
 }
 

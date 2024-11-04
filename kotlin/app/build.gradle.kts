@@ -1,11 +1,11 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.androidx.room)
+    alias(libs.plugins.google.devtools.ksp)
+    alias(libs.plugins.jetbrains.kotlin.serialization)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.parcelize)
-    alias(libs.plugins.jetbrains.kotlin.serialization)
-    alias(libs.plugins.google.devtools.ksp)
 }
 
 android {
@@ -66,6 +66,8 @@ dependencies {
     implementation(platform(kotlin("bom")))
     implementation(libs.kotlin.stdlib.jdk8)
     implementation(libs.kotlin.stdlib.jdk7)
+    implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.kotlinx.serialization.json)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

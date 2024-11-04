@@ -21,19 +21,19 @@ fun MainBottomBar(navController: NavController) {
     BottomAppBar(
         actions = {
             IconButton(onClick = {
-                navController.navigate(Routes.RoutesHome)
+                navController.navigateClearBackStack(Routes.Home)
             }) {
                 Icon(Icons.Outlined.Home, contentDescription = stringResource(R.string.home))
             }
             Spacer(modifier = Modifier.weight(1f))
             IconButton(onClick = {
-                navController.navigate(Routes.RoutesChats)
+                navController.navigateClearBackStack(Routes.Chats)
             }) {
                 Icon(Icons.Outlined.Person, contentDescription = stringResource(R.string.chats))
             }
             Spacer(modifier = Modifier.weight(1f))
             IconButton(onClick = {
-                navController.navigate(Routes.RoutesFavorites)
+                navController.navigateClearBackStack(Routes.Favorites)
             }) {
                 Icon(
                     Icons.Outlined.Favorite,
@@ -42,7 +42,7 @@ fun MainBottomBar(navController: NavController) {
             }
             Spacer(modifier = Modifier.weight(1f))
             IconButton(onClick = {
-                navController.navigate(Routes.RoutesSettings)
+                navController.navigateClearBackStack(Routes.Settings)
             }) {
                 Icon(
                     Icons.Outlined.Settings,
@@ -50,4 +50,17 @@ fun MainBottomBar(navController: NavController) {
                 )
             }
         })
+}
+
+private fun NavController.navigateClearBackStack(route: Routes) {
+    // dirty hack
+    val routeString = route::class.qualifiedName
+    if (currentDestination?.route == routeString) {
+        return
+    }
+    val e = currentBackStackEntry
+    navigate(route) {
+        popUpTo(0) { inclusive = true }
+        launchSingleTop = true
+    }
 }

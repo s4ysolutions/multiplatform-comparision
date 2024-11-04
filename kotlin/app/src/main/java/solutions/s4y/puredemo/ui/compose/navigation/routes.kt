@@ -1,30 +1,38 @@
 package solutions.s4y.puredemo.ui.compose.navigation
 
-import android.os.Parcelable
-import kotlinx.parcelize.Parcelize
-
-@Parcelize
-sealed class Routes(val path: String): Parcelable {
-    @Parcelize
-    object RoutesHome : Routes("home")
-    @Parcelize
-    object RoutesChats : Routes("chats")
-    @Parcelize
-    object RoutesFavorites : Routes("favorites")
-    @Parcelize
-    object RoutesSettings : Routes("settings")
-}
-/*
 import kotlinx.serialization.Serializable
 
-sealed class Routes {
+@Serializable
+sealed class Routes() {
     @Serializable
-    object RoutesHome : Routes()
+    data object Home : Routes()
     @Serializable
-    object RoutesChats : Routes()
+    data object Chatting : Routes()
     @Serializable
-    object RoutesFavorites : Routes()
+    data object Chats : Routes()
     @Serializable
-    object RoutesSettings : Routes()
+    data class Chat(val chatId: String): Routes()
+    @Serializable
+    object Favorites : Routes()
+    @Serializable
+    object Settings : Routes()
+}
+/*
+@Serializable
+sealed class Routes(val path: String) {
+    @Serializable
+    data object Home : Routes("home")
+    @Serializable
+    data object Chats : Routes("chats")
+    @Serializable
+    data class Chat(val chatId: String) : Routes("chat/$chatId") {
+        companion object {
+            val path = "chat/{chatId}"
+        }
+    }
+    @Serializable
+    object Favorites : Routes("favorites")
+    @Serializable
+    object Settings : Routes("settings")
 }
 */
