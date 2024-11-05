@@ -5,15 +5,12 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewmodel.compose.viewModel
-import androidx.navigation.NavController
 import solutions.s4y.puredemo.R
-import solutions.s4y.puredemo.ui.compose.navigation.Routes
+import solutions.s4y.puredemo.ui.compose.locals.daggerViewMode
 import solutions.s4y.puredemo.ui.viewmodels.ChatsViewModel
 
 @Composable
-fun ChatsScreen(viewModel: ChatsViewModel = viewModel(),onSelectChat: (String) -> Unit) {
+fun ChatsScreen(viewModel: ChatsViewModel = daggerViewMode(),onSelectChat: (String) -> Unit) {
     Column {
         Greeting(stringResource(id = R.string.chats) + " " + viewModel.name);
 
