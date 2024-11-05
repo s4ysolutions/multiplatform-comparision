@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:puretest/presentation/widgets/app_bars/chat_app_bar.dart';
 import 'package:puretest/presentation/widgets/app_bars/empty_app_bar.dart';
-import 'package:puretest/presentation/widgets/bottom_nav.dart';
+import 'package:puretest/presentation/widgets/app_bars/bottom_nav.dart';
 
 class MainNavScaffold extends StatelessWidget {
   final Widget child;
