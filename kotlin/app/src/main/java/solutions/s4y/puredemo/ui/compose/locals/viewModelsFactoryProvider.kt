@@ -9,7 +9,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 val LocalViewModelFactoryProvider = staticCompositionLocalOf<ViewModelProvider.Factory> { error("No ViewModelFactory provided") }
 
 @Composable
-inline fun <reified T: ViewModel>daggerViewMode(): T {
+inline fun <reified T: ViewModel>daggerViewModel(): T {
     val viewModelFactory = LocalViewModelFactoryProvider.current
     return viewModel<T>(factory = viewModelFactory)
 }

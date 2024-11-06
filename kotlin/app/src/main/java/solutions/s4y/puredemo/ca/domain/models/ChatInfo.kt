@@ -1,8 +1,11 @@
 package solutions.s4y.puredemo.ca.domain.models
 
+import java.util.Date
+
+
 class ChatInfo(
     val imageUrl: String,
-    val lastMessageTime: String,
+    val lastMessageTime: Date,
     val lastMessage: String,
     val hasUnreadMessage: Boolean,
     val marked: Boolean = false,

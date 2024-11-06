@@ -4,4 +4,6 @@ import kotlinx.coroutines.flow.StateFlow
 
 interface LikesCountProvider {
     val likesCount: StateFlow<Int>
+    fun connect()
+    fun disconnect()
 }

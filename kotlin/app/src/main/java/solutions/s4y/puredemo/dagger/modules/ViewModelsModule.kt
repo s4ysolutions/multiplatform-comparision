@@ -29,7 +29,7 @@ class DaggerViewModelFactory @Inject constructor(
 }
 
 @Module
-abstract class ViewModelModule {
+abstract class ViewModelsModule {
     @Binds
     @IntoMap
     @ViewModelKey(ChatsViewModel::class)

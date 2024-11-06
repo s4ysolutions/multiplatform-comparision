@@ -6,13 +6,12 @@ import androidx.compose.runtime.Composable
 
 private val PureColorScheme = lightColorScheme(
     background = DesktopBackground,
-    surfaceContainer = BottomAppBarBackground,
+    onSecondaryContainer = BottomAppBarSelectedIcon,
     onSurfaceVariant = BottomAppBarUnselectedIcon,
     secondaryContainer = BottomAppBarBackground,
-    onSecondaryContainer = BottomAppBarSelectedIcon,
+    surface = TopAppBarBackground,
+    surfaceContainer = BottomAppBarBackground,
 )
-
-
 
 @Composable
 fun PuredemoTheme(

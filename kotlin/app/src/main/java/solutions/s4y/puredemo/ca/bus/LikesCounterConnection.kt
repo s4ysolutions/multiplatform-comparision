@@ -1,6 +1,7 @@
 package solutions.s4y.puredemo.ca.bus
 
 import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
@@ -22,7 +23,7 @@ class LikesCounterConnection(positiveRate: Float, private val averageDelayMs: In
 
         val job = Job()
         if (jobRef.compareAndSet(null, job)) {
-            CoroutineScope(job).launch {
+            CoroutineScope(Dispatchers.Default + job).launch {
                 var likes = initial
                 while (isActive) {
                     _flow.emit(likes)

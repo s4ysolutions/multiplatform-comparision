@@ -1,0 +1,58 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "a9f8295d0e406c7a83f45e6d476ad603",
+    "entities": [
+      {
+        "tableName": "chat_info",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`image_url` TEXT NOT NULL, `last_message_time` INTEGER NOT NULL, `last_message` TEXT NOT NULL, `has_unread_message` INTEGER NOT NULL, `marked` INTEGER NOT NULL, PRIMARY KEY(`image_url`))",
+        "fields": [
+          {
+            "fieldPath": "imagerUrl",
+            "columnName": "image_url",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastMessageTime",
+            "columnName": "last_message_time",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lastMessage",
+            "columnName": "last_message",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hasUnreadMessage",
+            "columnName": "has_unread_message",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "marked",
+            "columnName": "marked",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "image_url"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'a9f8295d0e406c7a83f45e6d476ad603')"
+    ]
+  }
+}

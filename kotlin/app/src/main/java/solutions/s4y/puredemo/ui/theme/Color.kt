@@ -14,3 +14,7 @@ val DesktopBackground = Color(0xFFD9D9D9)
 val BottomAppBarBackground = Color(0xFF191818)
 val BottomAppBarSelectedIcon = Color(0xFFF2C94C)
 val BottomAppBarUnselectedIcon = Color(0xFF7446AC)
+val TopAppBarBackground = Color.Transparent
+val ChatsPanelBackground =  Color(0xFF212020)
+
+val BodyMedium = Color(0xFFF6F4F4)

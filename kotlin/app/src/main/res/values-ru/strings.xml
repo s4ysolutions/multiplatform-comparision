@@ -3,6 +3,7 @@
     <string name="app_name">puredemo</string>
     <string name="settings">Настройки</string>
     <string name="favorites">Любимые</string>
+    <string name="back">Назад</string>
     <string name="chats">Чаты</string>
     <string name="home">Домой</string>
 </resources>

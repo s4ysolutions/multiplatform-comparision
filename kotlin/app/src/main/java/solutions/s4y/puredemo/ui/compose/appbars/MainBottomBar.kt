@@ -16,7 +16,10 @@ import solutions.s4y.puredemo.ui.compose.navigation.Routes
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import androidx.navigation.NavBackStackEntry
+import solutions.s4y.puredemo.ui.compose.navigation.isChats
+import solutions.s4y.puredemo.ui.compose.navigation.isFavorites
+import solutions.s4y.puredemo.ui.compose.navigation.isHome
+import solutions.s4y.puredemo.ui.compose.navigation.isSettings
 
 @Composable
 fun MainBottomBar(navController: NavController) {
@@ -95,20 +98,3 @@ private fun NavController.navigateClearBackStack(route: Routes) {
     }
 }
 
-private val NavBackStackEntry.isHome: Boolean
-    get() =
-        this.destination.route == Routes.Home::class.qualifiedName
-
-
-private val NavBackStackEntry.isChats: Boolean
-    get() =
-        this.destination.route == Routes.Chat::class.qualifiedName ||
-                this.destination.route == Routes.Chats::class.qualifiedName
-
-private val NavBackStackEntry.isFavorites: Boolean
-    get() =
-        this.destination.route == Routes.Favorites::class.qualifiedName
-
-private val NavBackStackEntry.isSettings: Boolean
-    get() =
-        this.destination.route == Routes.Settings::class.qualifiedName

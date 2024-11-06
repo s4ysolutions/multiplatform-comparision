@@ -16,15 +16,21 @@ import solutions.s4y.puredemo.ui.compose.screens.SettingsScreen
 @Composable
 fun MainNavHost(navController: NavHostController, modifier: Modifier) {
     NavHost(navController = navController, startDestination = Routes.Chatting) {
-        composable<Routes.Home> {it ->
+        composable<Routes.Home> { it ->
             HomeScreen()
         }
         navigation<Routes.Chatting>(startDestination = Routes.Chats) {
             composable<Routes.Chats> {
-                ChatsScreen { chatId -> navController.navigate(Routes.Chat(chatId)) }
+                ChatsScreen(modifier = modifier) { chatId ->
+                    navController.navigate(
+                        Routes.Chat(
+                            chatId
+                        )
+                    )
+                }
             }
             composable<Routes.Chat> {
-                ChatScreen(it.toRoute<Routes.Chat>().chatId) {
+                ChatScreen(id = it.toRoute<Routes.Chat>().chatId, modifier = modifier) {
                     navController.popBackStack()
                 }
             }

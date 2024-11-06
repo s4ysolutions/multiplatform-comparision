@@ -17,22 +17,3 @@ sealed class Routes() {
     @Serializable
     object Settings : Routes()
 }
-/*
-@Serializable
-sealed class Routes(val path: String) {
-    @Serializable
-    data object Home : Routes("home")
-    @Serializable
-    data object Chats : Routes("chats")
-    @Serializable
-    data class Chat(val chatId: String) : Routes("chat/$chatId") {
-        companion object {
-            val path = "chat/{chatId}"
-        }
-    }
-    @Serializable
-    object Favorites : Routes("favorites")
-    @Serializable
-    object Settings : Routes("settings")
-}
-*/
