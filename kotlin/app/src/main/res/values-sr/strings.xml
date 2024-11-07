@@ -13,10 +13,16 @@
     <string name="mode_incognito_description">Постаните невидљиви у фиду и четовима, сакријте оглас и уживајте  непримећени</string>
     <string name="off">Off</string>
     <string name="settings">Подешавања</string>
+    <string name="start_conversation">Започни разговор</string>
     <string name="tems_conditions">Услови и одредбе</string>
     <plurals name="likes_count">
         <item quantity="one">%d особа је те лајковала</item>
         <item quantity="few">%d особе су те лајковало</item>
         <item quantity="other">%d особа су те лајковало</item>
+    </plurals>
+    <plurals name="common_temptations">
+        <item quantity="one">%d zajednički iskušenje</item>
+        <item quantity="few">%d zajednička iskušenja</item>
+        <item quantity="other">%d zajedničkih iskušenja</item>
     </plurals>
 </resources>

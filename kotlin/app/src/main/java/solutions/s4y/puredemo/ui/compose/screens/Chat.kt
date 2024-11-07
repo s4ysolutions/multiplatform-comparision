@@ -1,30 +1,29 @@
 package solutions.s4y.puredemo.ui.compose.screens
 
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.material3.Button
-import androidx.compose.material3.Text
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.stringResource
-import solutions.s4y.puredemo.R
 import solutions.s4y.puredemo.ui.compose.composables.ChatsPanel
+import solutions.s4y.puredemo.ui.compose.composables.chat.ChatHistory
+import solutions.s4y.puredemo.ui.compose.composables.chat.ChatInput
+import solutions.s4y.puredemo.ui.compose.composables.chat.CommonTemptations
 
 @Composable
-fun ChatScreen(id: String, modifier: Modifier, onBack: () -> Unit) {
-    ChatsPanel {
-        Column(modifier = modifier) {
-            Button(onClick = {
-                onBack()
-            }) {
-                Text(stringResource(R.string.chats))
+fun ChatScreen(id: String, innerPadding: PaddingValues, onBack: () -> Unit) {
+    Box(modifier = Modifier.padding(innerPadding)) {
+        CommonTemptations(modifier = Modifier.align(Alignment.TopCenter))
+
+        ChatsPanel(paddingValues = innerPadding) {
+            Column {
+                Box(modifier = Modifier.weight(1f)) {
+                    ChatHistory()
+                }
+                ChatInput()
             }
-            Text("Chat $id -> 1")
-            Text("Chat $id -> 2")
-            Text("Chat $id -> 3")
-            Text("Chat $id -> 4")
-            Text("Chat $id -> 5")
-            Text("Chat $id ->")
-            Text("Chat $id ->")
         }
     }
 }

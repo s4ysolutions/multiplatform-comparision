@@ -38,6 +38,20 @@ val Typography = Typography(
         fontSize = 14.sp,
         lineHeight = 21.sp,
     ),
+    bodySmall = TextStyle(
+        color = WhiteDarkest,
+        fontFamily = FontUbuntu,
+        fontWeight = FontWeight.Light,
+        fontSize = 12.sp,
+        lineHeight = 21.sp,
+    ),
+    displayMedium = TextStyle(
+        color = WhiteDarkest,
+        fontFamily = FontUbuntu,
+        fontWeight = FontWeight.Light,
+        fontSize = 14.sp,
+        lineHeight = 21.sp,
+    ),
     headlineLarge = TextStyle(
         fontFamily = FontUbuntu,
         fontWeight = FontWeight.W400,

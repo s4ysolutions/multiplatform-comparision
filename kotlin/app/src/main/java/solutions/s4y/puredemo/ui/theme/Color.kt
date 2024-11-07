@@ -7,17 +7,19 @@ val WhiteBrightest = Color(0xFFF6F4F4)
 val WhiteDark = Color(0xFFBCB3B3)
 val WhiteDarkest = Color(0xFF8D8D8D)
 val Gray2 = Color(0xFF4f4f4f)
+val Purlpe = Color(0xFF7446AC)
 
 val DesktopBackground = Color(0xFFD9D9D9)
 val BottomAppBarBackground = Color(0xFF191818)
 val BottomAppBarSelectedIcon = Color(0xFFF2C94C)
-val BottomAppBarUnselectedIcon = Color(0xFF7446AC)
+val BottomAppBarUnselectedIcon = Purlpe
 val TopAppBarBackground = Color.Transparent
 val ChatsPanelBackground = Color(0xFF212020)
 val HeartBackground = Color(0xFF1F093A)
 val BottomSheetBackground = Color(0xFF0D1333)
 val ProductBackground = Color(0xFF393737)
 val PanelBorderColor = Color(0xFF393737)
+val TopAppBarColor = WhiteBrightest
 
 val BuyIncognitoButtonColors = ButtonColors(
     containerColor = Gray2,

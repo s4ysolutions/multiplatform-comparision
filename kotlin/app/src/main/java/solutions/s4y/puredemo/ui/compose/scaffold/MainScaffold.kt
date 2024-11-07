@@ -1,10 +1,8 @@
 package solutions.s4y.puredemo.ui.compose.scaffold
 
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.ui.Modifier
 import androidx.navigation.NavBackStackEntry
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
@@ -32,8 +30,7 @@ fun MainScaffold(navController: NavHostController) {
         BottomSheetsHost {
             MainNavHost(
                 navController,
-                modifier =
-                Modifier.padding(innerPadding)
+                innerPadding = innerPadding
             )
         }
     }

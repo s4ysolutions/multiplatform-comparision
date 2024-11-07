@@ -13,11 +13,16 @@
     <string name="mode_incognito_description">Стань невидимкой в ленте и чатах, скрой объявление и наслаждайся &lt;Space&gt; незамеченным</string>
     <string name="off">Off</string>
     <string name="settings">Настройки</string>
+    <string name="start_conversation">Начни общение</string>
     <string name="tems_conditions">Условия и положения</string>
     <plurals name="likes_count">
         <item quantity="one">%d человек тебя лайкнул</item>
         <item quantity="few">%d человека тебя лайкнул</item>
         <item quantity="many">%d человек тебя лайкнули</item>
-        <item quantity="other">%d человек тебя лайкнули</item>
+    </plurals>
+    <plurals name="common_temptations">
+        <item quantity="one">%d общий соблазн</item>
+        <item quantity="few">%d общих соблазна</item>
+        <item quantity="many">%d общих соблазнов</item>
     </plurals>
 </resources>
