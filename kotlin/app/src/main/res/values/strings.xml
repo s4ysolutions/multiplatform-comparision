@@ -1,11 +1,18 @@
 <resources>
     <string name="app_name">puredemo</string>
     <string name="back">Back</string>
+    <string name="buy">Buy</string>
     <string name="chats">Chats</string>
     <string name="favorites">Favorites</string>
+    <string name="hit">Hit</string>
     <string name="home">Home</string>
+    <string name="mode_incognito_24_1"/>
+    <string name="mode_incognito_24_2">Incognito</string>
+    <string name="mode_incognito_24_3">mode for 24 hours</string>
+    <string name="mode_incognito_description">Become invisible in feeds and chats, hide the ad, and enjoy  unnoticed</string>
     <string name="off">Off</string>
     <string name="settings">Settings</string>
+    <string name="tems_conditions">Terms and Conditions</string>
     <plurals name="likes_count">
         <item quantity="one">%d person liked you</item>
         <item quantity="other">%d people liked you</item>

@@ -1,6 +1,7 @@
 package solutions.s4y.puredemo.ui.compose.composables
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.foundation.layout.BoxWithConstraints
@@ -19,6 +20,7 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.unit.dp
 import solutions.s4y.puredemo.ui.compose.bottomsheets.BottomSheetAware
 import solutions.s4y.puredemo.ui.theme.ChatsPanelBackground
+import solutions.s4y.puredemo.ui.theme.PanelBorderColor
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -40,6 +42,7 @@ fun ChatsPanel(content: @Composable BoxScope.() -> Unit) {
                     .height(desiredHeight)
                     .clip(RoundedCornerShape(topStart = 16.dp, topEnd = 16.dp))
                     .background(ChatsPanelBackground)
+                    .border(2.dp, PanelBorderColor, RoundedCornerShape(8.dp))
                     .padding(16.dp)
                     .align(Alignment.BottomCenter),
                 content = content

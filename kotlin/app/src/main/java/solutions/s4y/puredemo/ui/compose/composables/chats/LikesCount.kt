@@ -35,7 +35,7 @@ fun LikesCount(likesCount: Int, new: Boolean) {
                 painter = painterResource(id = R.drawable.heart),
                 contentDescription = "Likes",
                 modifier = Modifier
-                    .size(20.dp, 17.dp)
+                    .size(24.dp, 24.dp)
                     .align(Alignment.Center)
             )
         }

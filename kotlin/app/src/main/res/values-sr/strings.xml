@@ -2,11 +2,18 @@
 <resources>
     <string name="app_name">puredemo</string>
     <string name="back">Назад</string>
+    <string name="buy">Купити</string>
     <string name="chats">Ћаскања</string>
     <string name="favorites">Омиљени</string>
+    <string name="hit">Хит</string>
     <string name="home">Почетна</string>
+    <string name="mode_incognito_24_1">Режим</string>
+    <string name="mode_incognito_24_2">инкогнито</string>
+    <string name="mode_incognito_24_3">на 24 сата</string>
+    <string name="mode_incognito_description">Постаните невидљиви у фиду и четовима, сакријте оглас и уживајте  непримећени</string>
     <string name="off">Off</string>
     <string name="settings">Подешавања</string>
+    <string name="tems_conditions">Услови и одредбе</string>
     <plurals name="likes_count">
         <item quantity="one">%d особа је те лајковала</item>
         <item quantity="few">%d особе су те лајковало</item>

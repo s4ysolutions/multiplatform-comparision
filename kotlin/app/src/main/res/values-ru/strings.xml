@@ -2,11 +2,18 @@
 <resources>
     <string name="app_name">puredemo</string>
     <string name="back">Назад</string>
+    <string name="buy">Купить</string>
     <string name="chats">Чаты</string>
     <string name="favorites">Любимые</string>
+    <string name="hit">Хит</string>
     <string name="home">Домой</string>
+    <string name="mode_incognito_24_1">Режим</string>
+    <string name="mode_incognito_24_2">инкогнито</string>
+    <string name="mode_incognito_24_3">на 24 часа</string>
+    <string name="mode_incognito_description">Стань невидимкой в ленте и чатах, скрой объявление и наслаждайся &lt;Space&gt; незамеченным</string>
     <string name="off">Off</string>
     <string name="settings">Настройки</string>
+    <string name="tems_conditions">Условия и положения</string>
     <plurals name="likes_count">
         <item quantity="one">%d человек тебя лайкнул</item>
         <item quantity="few">%d человека тебя лайкнул</item>

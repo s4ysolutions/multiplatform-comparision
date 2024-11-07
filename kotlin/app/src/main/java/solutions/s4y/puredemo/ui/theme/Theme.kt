@@ -8,6 +8,7 @@ private val PureColorScheme = lightColorScheme(
     background = DesktopBackground,
     onSecondaryContainer = BottomAppBarSelectedIcon,
     onSurfaceVariant = BottomAppBarUnselectedIcon,
+    surfaceContainerLow = BottomSheetBackground,
     secondaryContainer = BottomAppBarBackground,
     surface = TopAppBarBackground,
     surfaceContainer = BottomAppBarBackground,
