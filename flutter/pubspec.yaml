@@ -48,12 +48,12 @@ flutter:
     - assets/images/chats/mic_off.svg
     - assets/images/chats/plus.svg
     - assets/images/chats/rocket.png
-    - assets/images/chats/users/1.png
-    - assets/images/chats/users/2.png
-    - assets/images/chats/users/3.png
-    - assets/images/chats/users/4.png
-    - assets/images/chats/users/5.png
-    - assets/images/chats/users/6.png
+    - assets/images/chats/users/user1.jpeg
+    - assets/images/chats/users/user2.jpeg
+    - assets/images/chats/users/user3.jpeg
+    - assets/images/chats/users/user4.jpeg
+    - assets/images/chats/users/user5.jpeg
+    - assets/images/chats/users/user6.jpeg
 
 fonts:
   - family: Ubuntu

@@ -31,7 +31,7 @@ AppBar chatAppBar({required BuildContext context, required String chatId}) {
               height: 30,
               child: FittedBox(
                   fit: BoxFit.fitHeight,
-                  child: snapshot.data?.image ?? const Text('')));
+                  child: snapshot.data?.imageWidget ?? const Text('')));
         }),
     titleSpacing: 0,
   );

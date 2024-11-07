@@ -41,8 +41,9 @@ class _ChatsList extends StatelessWidget {
                   },
                   child: _ChatListItem(chat: chat));
             },
-            separatorBuilder: (context, index) => const SizedBox(height: 16,)
-        );
+            separatorBuilder: (context, index) => const SizedBox(
+                  height: 16,
+                ));
       } else if (state is ChatsError) {
         return Center(child: Text(state.message));
       } else {
@@ -51,8 +52,6 @@ class _ChatsList extends StatelessWidget {
     });
   }
 }
-
-
 
 class _ChatListItem extends StatelessWidget {
   final ChatInfoModel chat;
@@ -64,11 +63,21 @@ class _ChatListItem extends StatelessWidget {
     final l10n = AppLocalizations.of(context)!;
     final tt = Theme.of(context).textTheme;
     return Row(children: [
-      CircleAvatar(
+      Container(
+        width: 60,
+          height: 60,
+          decoration: chat.hasUnreadMessages ? const BoxDecoration(
+            shape: BoxShape.circle,
+            border: Border.fromBorderSide(BorderSide(
+              color: Color(0xFFFFFFFF),
+              width: 3,
+            )),
+          ): null,
+          child: CircleAvatar(
         radius: 30,
         backgroundColor: const Color(0xFF1F093A),
-        child: chat.image,
-      ),
+        backgroundImage: chat.imageProvider,
+      )),
       const SizedBox(width: 16),
       Expanded(
           child: Column(
@@ -79,7 +88,10 @@ class _ChatListItem extends StatelessWidget {
                   chat.lastMessageTime.hour, chat.lastMessageTime.minute),
               style: tt.bodySmall),
           const SizedBox(height: 4),
-          Text(chat.lastMessage, style: tt.bodyMedium,),
+          Text(
+            chat.lastMessage,
+            style: tt.bodyMedium,
+          ),
         ],
       )),
       if (chat.hasUnreadMessages)
