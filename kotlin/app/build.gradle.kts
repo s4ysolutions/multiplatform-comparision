@@ -45,6 +45,19 @@ android {
     room {
         schemaDirectory("schemas")
     }
+    @Suppress("UnstableApiUsage")
+    testOptions {
+        unitTests {
+            isIncludeAndroidResources = true
+        }
+    }
+    flavorDimensions += "version"
+    productFlavors {
+        create("robolectric") {
+            dimension = "version"
+            targetSdk = 34 // Set lower targetSdkVersion for Robolectric compatibility
+        }
+    }
 }
 
 dependencies {
@@ -68,7 +81,11 @@ dependencies {
     implementation(libs.kotlin.stdlib.jdk7)
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.kotlinx.serialization.json)
+    debugImplementation(libs.androidx.compose.ui.tooling)
     testImplementation(libs.junit)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.androidx.compose.ui.test.junit4)
+    testDebugImplementation((libs.androidx.compose.ui.test.manifest))
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))

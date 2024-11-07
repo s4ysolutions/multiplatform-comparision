@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">puredemo</string>
-    <string name="settings">Настройки</string>
-    <string name="favorites">Любимые</string>
     <string name="back">Назад</string>
     <string name="chats">Чаты</string>
+    <string name="favorites">Любимые</string>
     <string name="home">Домой</string>
+    <string name="off">Off</string>
+    <string name="settings">Настройки</string>
+    <plurals name="likes_count">
+        <item quantity="one">%d человек тебя лайкнул</item>
+        <item quantity="few">%d человека тебя лайкнул</item>
+        <item quantity="many">%d человек тебя лайкнули</item>
+        <item quantity="other">%d человек тебя лайкнули</item>
+    </plurals>
 </resources>

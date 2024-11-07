@@ -2,7 +2,12 @@
     <string name="app_name">puredemo</string>
     <string name="back">Back</string>
     <string name="chats">Chats</string>
-    <string name="home">Home</string>
     <string name="favorites">Favorites</string>
+    <string name="home">Home</string>
+    <string name="off">Off</string>
     <string name="settings">Settings</string>
+    <plurals name="likes_count">
+        <item quantity="one">%d person liked you</item>
+        <item quantity="other">%d people liked you</item>
+    </plurals>
 </resources>

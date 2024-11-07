@@ -3,7 +3,7 @@ package solutions.s4y.puredemo.ca.domain.models
 import java.util.Date
 
 
-class ChatInfo(
+data class ChatInfo(
     val imageUrl: String,
     val lastMessageTime: Date,
     val lastMessage: String,

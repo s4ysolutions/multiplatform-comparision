@@ -6,13 +6,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import androidx.lifecycle.viewmodel.compose.viewModel
 import solutions.s4y.puredemo.R
 import solutions.s4y.puredemo.ui.compose.composables.ChatsPanel
-import solutions.s4y.puredemo.ui.viewmodels.ChatViewModel
 
 @Composable
-fun ChatScreen(id: String, modifier: Modifier, viewModel: ChatViewModel = viewModel(), onBack: () -> Unit) {
+fun ChatScreen(id: String, modifier: Modifier, onBack: () -> Unit) {
     ChatsPanel {
         Column(modifier = modifier) {
             Button(onClick = {

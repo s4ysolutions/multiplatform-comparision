@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">puredemo</string>
+    <string name="back">Назад</string>
+    <string name="chats">Ћаскања</string>
+    <string name="favorites">Омиљени</string>
+    <string name="home">Почетна</string>
+    <string name="off">Off</string>
+    <string name="settings">Подешавања</string>
+    <plurals name="likes_count">
+        <item quantity="one">%d особа је те лајковала</item>
+        <item quantity="few">%d особе су те лајковало</item>
+        <item quantity="other">%d особа су те лајковало</item>
+    </plurals>
+</resources>
