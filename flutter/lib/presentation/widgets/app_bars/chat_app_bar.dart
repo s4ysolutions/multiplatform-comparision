@@ -10,8 +10,8 @@ AppBar chatAppBar({required BuildContext context, required String chatId}) {
   return AppBar(
     actions: [
       IconButton(
-        icon: const Icon(Icons.more_vert),
-        onPressed: () {}
+          icon: const Icon(Icons.more_vert),
+          onPressed: () {}
       ),
     ],
     automaticallyImplyLeading: false,
@@ -27,11 +27,10 @@ AppBar chatAppBar({required BuildContext context, required String chatId}) {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Text('');
           }
-          return SizedBox(
-              height: 30,
-              child: FittedBox(
-                  fit: BoxFit.fitHeight,
-                  child: snapshot.data?.imageWidget ?? const Text('')));
+          return CircleAvatar(
+            backgroundImage: snapshot.data?.imageProvider ?? null,
+            radius: 20,
+          );
         }),
     titleSpacing: 0,
   );
