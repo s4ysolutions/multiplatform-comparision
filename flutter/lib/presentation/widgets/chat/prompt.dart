@@ -25,35 +25,41 @@ class ChatPrompt extends StatelessWidget {
               ))),
       const SizedBox(width: 8),
       Expanded(
-          child: Container(
-              decoration: BoxDecoration(
-                border: Border.all(color: colorChat, width: 1), // Border color
-                borderRadius: BorderRadius.circular(8), // Rounded corners
-              ),
-              padding: const EdgeInsets.only(left: 8, right: 8),
+          child: SizedBox(
               height: 34,
-              child: Center(
-                  child: Row(
-                      //crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                    Expanded(
-                        child: SizedBox(height: 34, child:TextField(
-                            decoration: InputDecoration(
-                              // filled: true,
-                              // fillColor: Colors.green,
-                              border: InputBorder.none,
-                              // contentPadding: const EdgeInsets.symmetric(vertical: , horizontal: 0.0),
-                              //contentPadding: const EdgeInsets.symmetric(horizontal: 0.0),
-                              //contentPadding: const EdgeInsets.all(0),
-                              contentPadding: const EdgeInsets.only(bottom: 17),
-                              hintText: l10n.messagePrompt,
-                              hintStyle: textStyleChatHint,
-                            ),
-                            textAlignVertical: TextAlignVertical.top,
-                            style: tt.displayMedium))),
-                    SvgPicture.asset("assets/images/chats/alien.svg",
-                        height: 24),
-                  ])))),
+              child: TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8.0),
+                      borderSide: BorderSide(
+                        color: colorChat,
+                        width: 2.0,
+                      ),
+                    ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8.0),
+                      borderSide: BorderSide(
+                        color: colorChat,
+                        width: 2.0,
+                      ),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8.0),
+                      borderSide: BorderSide(
+                        color: colorChat,
+                        width: 2.0,
+                      ),
+                    ),
+                    // contentPadding: const EdgeInsets.all(0),
+                    hintText: l10n.messagePrompt,
+                    hintStyle: textStyleChatHint,
+                    suffixIcon: Container(
+                        padding: const EdgeInsets.all(4),
+                        child:
+                            SvgPicture.asset("assets/images/chats/alien.svg")),
+                  ),
+                  textAlignVertical: TextAlignVertical.top,
+                  style: tt.displayMedium))),
       const SizedBox(width: 8),
       SizedBox(
           width: 24,
